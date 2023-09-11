@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=PT+Sans+Caption:wght@400;700&family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+    "
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav
+      class="max-w-[1070px] mx-auto grid grid-cols-7 items-center mb-32 pt-10"
+    >
+      <div class="col-span-1">
+        <p class="text-[39px] font-bold">pti.</p>
+      </div>
+      <div class="col-span-6 md:col-span-5 flex items-center">
+        <div class="w-2/3 flex justify-start items-center relative">
+          <i
+            class="fa-solid fa-magnifying-glass absolute mr-2 w-10 text-[#fb6012] ml-2"
+          ></i>
+          <input
+            placeholder="Search audiobook "
+            class="border-none border-gray-400 rounded-lg p-2 w-full placeholder:px-8 outline-none"
+          />
+        </div>
+
+        <div class="">
+          <div class="p-3">
+            <div class="dropdown inline-block relative">
+              <button
+                class="bg-white font-semibold py-2 px-8 rounded-lg inline-flex items-center"
+              >
+                <span class="mr-1 text-[#11263C] text-[16px]">MENU</span>
+                <svg
+                  class="fill-current h-4 w-4 text-[red]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </button>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a
+                    class="rounded-t bg-white hover:bg-[#E7E9EC] hover:text-[#FC6011] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Details</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="bg-white hover:bg-[#E7E9EC] hover:text-[#FC6011] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Category</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-white hover:bg-[#E7E9EC] hover:text-[#FC6011] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >My Favorites</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-white hover:bg-[#E7E9EC] hover:text-[#FC6011] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Profile</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-white hover:bg-[#E7E9EC] hover:text-[#FC6011] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Log In/Sign Up</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:block hidden col-span-1 ml-[80px]">
+        <span
+          class="bg-[#FD6011] w-[51px] h-[49px] rounded-full text-white flex items-center justify-center text-[18px]"
+        >
+          <i class="fa-regular fa-user"></i>
+        </span>
+      </div>
+    </nav>
+    <!-- Banner Section -->
+    <section
+      class="max-w-[1070px] mx-auto h-[314px] md:bg-[#F99F1C] rounded-[30px] mb-36"
+    >
+      <div class="md:grid md:grid-cols-5">
+        <div
+          class="banner-left flex flex-col justify-center items-center col-span-3"
+        >
+          <div class="hidden md:block">
+            <h1
+              class="text-[#FFEFE7] text-[43px] leading-[48.97px] font-bold mb-5"
+            >
+              Instant access to <br />
+              millions of audiobooks.
+            </h1>
+            <p class="md:text-[22px] md:text-[#E7E9EC] md:leading-[25px]">
+              Buy two selected books and get one for free
+            </p>
+          </div>
+
+          <div class="md:hidden">
+            <h1 class="text-[27px] font-bold text-center leading-[39px] mb-2">
+              Instant access to millions <br />
+              of audiobooks.
+            </h1>
+            <p class="text-[16px] text-[#11263C]">
+              Buy two selected books and get one for free
+            </p>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <img
+            class="hidden md:block w-[289px] h-[289px]"
+            src="assets/images/banner.png"
+            alt=""
+          />
+          <span
+            class="block md:hidden w-[382px] h-[207px] bg-[#FD9460] flex justify-center items-center mt-24 rounded-2xl mx-auto"
+          >
+            <img
+              class="w-[289px] h-[289px] mb-20"
+              src="assets/images/banner.png"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider -1 -->
+    <div class="max-w-[1060px] mx-auto flex justify-between mt-10 mb-5">
+      <span>
+        <p class="header-text">Popular Audiobooks</p>
+      </span>
+      <span class="flex items-center gap-x-1">
+        <i class="hidden md:block fa-solid fa-chevron-left text-[#929BA5]"></i>
+        <p class="hidden md:block text-[#FC6011] text-[16px]">Sell All</p>
+        <i class="fa-solid fa-chevron-right text-[#415163]"></i>
+      </span>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/img-4.png" alt="book-4" />
+          <p>The 4TH watch</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/img-2.png" alt="book-2" />
+
+            <p>Enghantment</p>
+            <div
+              class="icon-heart absolute top-3 left-[55%] w-[48px] h-[48px] rounded-xl flex items-center justify-center"
+            >
+              <i class="fa-regular fa-heart text-[24px]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/img-3.png" alt="book-3" />
+          <p>Fierce</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-4.png" alt="book-4" />
+          <p>The 4TH watch</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-5.png" alt="book-5" />
+          <p>Monday Hook duh</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-6.png" alt="book-6" />
+          <p>Monday Hook duh</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-7.png" alt="book-7" />
+          <p>The 4TH watch</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider -2 -->
+
+    <div class="max-w-[1060px] mx-auto flex justify-between mt-10 mb-5">
+      <span>
+        <p class="header-text">Recommended Audiobooks</p>
+      </span>
+      <span class="flex items-center gap-x-1">
+        <i class="hidden md:block fa-solid fa-chevron-left text-[#929BA5]"></i>
+        <p class="hidden md:block text-[#FC6011] text-[16px]">Sell All</p>
+        <i class="fa-solid fa-chevron-right text-[#415163]"></i>
+      </span>
+    </div>
+    <div class="swiper mySwiper mb-48">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/img-6.png" alt="book-2" />
+
+            <p>The 4th watch</p>
+            <div
+              class="icon-heart-botom absolute top-3 left-[55%] w-[48px] h-[48px] rounded-xl flex items-center justify-center"
+            >
+              <i class="fa-regular fa-heart text-[24px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-7.png" alt="book-4" />
+          <p>Roadtrip To Success</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-8.png" alt="book-3" />
+          <p>Checkpoint</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-9.png" alt="book-4" />
+          <p>Lifestyle</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-10.png" alt="book-5" />
+          <p>The rise of a warrior</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-6.png" alt="book-6" />
+          <p>Monday Hook duh</p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/img-7.png" alt="book-7" />
+          <p>The 4TH watch</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer
+      class="max-w-[1444px] h-[414px] grid grid-cols-1 lg:grid-cols-5 pt-20 bg-[#F99F1C] mx-auto"
+    >
+      <section class="lg:col-span-3 lg:ml-32">
+        <div class="mb-10 mx-5">
+          <form class="flex flex-row">
+            <input
+              class="h-16 bg-white text-[#A8A8A8] font-normal w-[90%] py-1 px-5 outline-none"
+              type="text"
+              placeholder="Enter Your Email"
+            />
+            <span
+              class="flex items-center bg-white rounded rounded-l-none rounded-[20px] border-0 px-3 font-bold text-grey-100"
+            >
+              <button
+                class="bg-[#FC6011] text-sm text-white py-2 px-5 rounded-2xl"
+              >
+                <p class="flex items-center gap-x-5">
+                  Subscribe
+                  <i class="fa-solid fa-right-long"></i>
+                </p>
+              </button>
+            </span>
+          </form>
+        </div>
+
+        <div class="ml-8">
+          <span class="hidden lg:block">
+            <p class="text-[39px] font-bold">
+              pti<strong class="text-[#FB6012]">.</strong>
+            </p>
+          </span>
+
+          <div
+            class="hidden lg:block lg:flex lg:items-center lg:justify-between"
+          >
+            <span>
+              <p class="capitalize">Copyright©Tripp.All right reserved</p>
+            </span>
+            <span>
+              <i
+                class="fa-brands fa-google bg-[#FDDDBA] w-[42px] h-[42px] rounded-full p-3 text-[#FC6011] text-[16px] text-center"
+              ></i>
+              <i
+                class="fa-brands fa-twitter bg-[#FDDDBA] w-[42px] h-[42px] rounded-full p-3 text-[#FC6011] text-[16px] text-center"
+              ></i>
+
+              <i
+                class="fa-brands fa-instagram bg-[#FDDDBA] w-[42px] h-[42px] rounded-full p-3 text-[#FC6011] text-[16px] text-center"
+              ></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="lg:hidden flex flex-col items-center gap-y-7 pt-4 overflow-hidden"
+        >
+          <span>
+            <i
+              class="fa-brands fa-google bg-[#FC6011] w-[42px] h-[42px] rounded-full p-3 text-[#fff] text-[16px] text-center"
+            ></i>
+            <i
+              class="fa-brands fa-twitter bg-[#FC6011] w-[42px] h-[42px] rounded-full p-3 text-[#fff] text-[16px] text-center"
+            ></i>
+
+            <i
+              class="fa-brands fa-instagram bg-[#FC6011] w-[42px] h-[42px] rounded-full p-3 text-[#fff] text-[16px] text-center"
+            ></i>
+          </span>
+
+          <span class="">
+            <p class="text-[39px] font-bold">
+              pti<strong class="text-[#FB6012]">.</strong>
+            </p>
+          </span>
+
+          <span>
+            <p class="capitalize">Copyright©Tripp.All right reserved</p>
+          </span>
+        </div>
+      </section>
+
+      <!-- Image section -->
+
+      <section class="lg:col-span-2 hidden lg:block">
+        <img class="mt-[-150px]" src="/assets/images/footer-img.png" alt="" />
+      </section>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
